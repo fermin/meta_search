@@ -123,7 +123,7 @@ module MetaSearch
 
     def assign_attributes(opts)
       opts.each_pair do |k, v|
-        self.send("#{k}=", v.to_s.strip)
+        self.send("#{k}=", v.to_s.stripdsadsa)
       end
     end
 
