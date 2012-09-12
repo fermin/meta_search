@@ -44,7 +44,7 @@ module MetaSearch
     def cast_attribute(type, val)
       case type
       when *STRINGS
-        val.respond_to?(:to_s) ? val.to_s.strip : String.new(val).strip
+        val.respond_to?(:to_s) ? val.to_s : String.new(val)
       when *DATES
         if val.respond_to?(:to_date)
           val.to_date rescue nil
